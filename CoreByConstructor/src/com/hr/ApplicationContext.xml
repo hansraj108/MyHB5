@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- target class -->
+
+<bean id="robot" class="com.hr.Robot" autowire="constructor">
+
+</bean>
+<bean id="chip" class="com.hr.Chip">
+<constructor-arg value="1"/>
+<constructor-arg value="silicon"/>
+</bean>
+<bean id="sensor" class="com.hr.Sensor">
+<property name="id" value="001"/>
+<property name="range" value="400m"></property>
+</bean>
+<bean id="sensor2" class="com.hr.Sensor">
+<property name="id" value="002"/>
+<property name="range" value="800m"></property>
+</bean>
+
+
+</beans>

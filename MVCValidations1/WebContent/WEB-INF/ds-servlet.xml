@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+ <bean name="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+<property name="basename" value="com/nt/resource/validation_Messages"/>
+</bean>
+<bean name="userValidator" class="com.nt.validator.UserValidator"/>
+<bean name="/reg" class="com.nt.controller.UserController">
+<property name="formView" value="registrationform"/>
+<property name="validator" ref="userValidator"/>
+<property name="commandName" value="user"/>
+<property name="commandClass" value="com.nt.command.User"/>
+</bean>
+
+<bean name="handlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+
+<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/WEB-INF/"/>
+<property name="suffix" value=".jsp"/>
+</bean>
+</beans> 

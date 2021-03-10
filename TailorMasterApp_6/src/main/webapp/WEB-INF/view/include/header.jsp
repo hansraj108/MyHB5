@@ -1,0 +1,1 @@
+<h1 align="center">Tailor Master Application</h1>

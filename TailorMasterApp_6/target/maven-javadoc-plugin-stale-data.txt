@@ -1,0 +1,20 @@
+cmd.exe
+/X
+/C
+""C:\Program Files\Java\jdk1.8.0_211\jre\..\bin\javadoc.exe" @options @argfile"
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\allclasses-frame.html = 1595903343509
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\allclasses-noframe.html = 1595903343511
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\argfile = 1595903330787
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\constant-values.html = 1595903342863
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\deprecated-list.html = 1595903343500
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\help-doc.html = 1595903343527
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\index-all.html = 1595903343493
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\index.html = 1595903343517
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\options = 1595903330781
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\overview-frame.html = 1595903342225
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\overview-summary.html = 1595903343521
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\overview-tree.html = 1595903343352
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\package-list = 1595903342214
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\script.js = 1595903343538
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\serialized-form.html = 1595903342879
+E:\workspace\MyHB5\TailorMasterApp_6\target\site\apidocs\stylesheet.css = 1595903343529

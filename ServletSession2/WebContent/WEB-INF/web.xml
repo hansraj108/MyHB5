@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+<display-name>ServletSession1</display-name>
+
+ <welcome-file-list>
+<welcome-file>details.html</welcome-file>
+</welcome-file-list>
+<servlet>
+<servlet-name>servletX</servlet-name>
+<servlet-class>com.nt.controller.Servlet11</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>servletX</servlet-name>
+<url-pattern>/abc</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>servletY</servlet-name>
+<servlet-class>com.nt.controller.Servlet22</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>servletY</servlet-name>
+<url-pattern>/xyz</url-pattern>
+</servlet-mapping>
+
+
+</web-app>

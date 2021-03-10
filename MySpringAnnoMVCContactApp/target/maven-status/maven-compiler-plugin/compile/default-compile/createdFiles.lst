@@ -1,0 +1,6 @@
+com\hr\config\SpringWebConfig.class
+com\hr\config\SpringRootConfig.class
+com\hr\domain\User.class
+com\hr\domain\Contact.class
+com\hr\config\ContactApplicationDispatcherServlet.class
+com\hr\controller\TestController.class
