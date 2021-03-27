@@ -1,5 +1,6 @@
 package MyMap;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -7,7 +8,7 @@ import java.util.Map;
 public class MyMapTest1 {
 
 	public static void main(String[] args) {
-		java8Sorting();
+		java8Sorting1();
 	}
 	
 	private static Map<String, Integer> getUnSortedMap() 
@@ -21,13 +22,34 @@ public class MyMapTest1 {
         return unsortMap;
     }
 
-	private static void java8Sorting(){
-	Map<String, Integer> map = getUnSortedMap();
-	System.out.println(map);
-	LinkedHashMap<String, Integer> sortedMap = new LinkedHashMap<>();
-	map.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEachOrdered(x->sortedMap.put(x.getKey(), x.getValue()));
-	System.out.println(sortedMap);
 	
-
-	}
+	
+	
+	private static void java8Sorting1(){
+		Map<String, Integer> map = getUnSortedMap();
+		LinkedHashMap<String,Integer> sortedMap = new LinkedHashMap<>();
+		map.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEachOrdered(x->sortedMap.put(x.getKey(), x.getValue()));
+		System.out.println(sortedMap);
+		LinkedHashMap<String,Integer> sortedMap1 = new LinkedHashMap<>();
+		map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEachOrdered(x->sortedMap1.put(x.getKey(), x.getValue()));
+		System.out.println(sortedMap1);
+		LinkedHashMap<String,Integer> sortedMap2 = new LinkedHashMap<>();
+		map.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).forEachOrdered(x->sortedMap2.put(x.getKey(), x.getValue()));
+		System.out.println(sortedMap2);
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
